@@ -1,11 +1,18 @@
-# input 123
+def SumDigits(No):
+    Sum = 0
+    
+    while No > 0:
+        Digit = No % 10
+        Sum = Sum + Digit
+        No = No // 10
 
-n = int(input())                 
-sum = 0
+    return Sum
 
-while n > 0:
-    sum += n % 10
-    n //= 10
+def main():
+    Value = int(input("Enter Number: "))
+    Ret = SumDigits(Value)
 
-print(sum)
-# output 6
+    print("Sum of Digits is: ",Ret)
+
+if __name__ == "__main__" :
+    main()
