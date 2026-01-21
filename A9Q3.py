@@ -1,4 +1,12 @@
-def Square(no):
-    print(no * no)
+def Square(No):
+        sqr = No * No
+        return sqr
+    
+def main():
+    Value = int(input("Enter number:"))
+    
+    Ret = Square(Value)
+    print("Square of the number is: ",Ret)
 
-Square(5)
+if __name__ == "__main__":
+    main()
