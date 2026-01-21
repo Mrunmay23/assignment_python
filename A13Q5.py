@@ -1,10 +1,19 @@
-marks = int(input("Enter marks: "))
+def DisplayGrade(No):
+    if(No > 75):
+        print("Distinction.")
 
-if marks >= 75:
-    print("Distinction")
-elif marks >= 60:
-    print("First Class")
-elif marks >= 50:
-    print("Second Class")
-else:
-    print("Fail")
+    elif(No >= 60):
+        print("First Class")
+    
+    elif(No >= 50):
+        print("Second Class")
+
+    else:
+        print("Fail")
+
+def main():
+    Value = int(input("Enter Marks: "))
+    DisplayGrade(Value)
+
+if __name__ == "__main__":
+    main()
