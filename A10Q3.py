@@ -1,8 +1,15 @@
-n = int(input())
-fact = 1
+def Factorial(No):
+    Fact = 1
+    for i in range(1,No+1):
+        Fact = Fact * i
 
-for i in range(1, n + 1):
-    fact *= i
+    return Fact
 
-print(fact)
+def main():
+    Value = int(input("Enter Number : "))
 
+    Ret = Factorial(Value)
+    print("Factorial of numbers is: ", Ret)
+
+if __name__ == "__main__":
+    main()
