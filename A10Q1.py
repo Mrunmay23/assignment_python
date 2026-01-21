@@ -1,4 +1,12 @@
-n = int(input())
+def Table(No):
+    
+    for i in range(1,11):
+        print( No * i,end=" ")
+    
+def main():
+    Value = int(input("Enter Number : "))
 
-for i in range(1, 11):
-    print(n * i, end=" ")
+    Table(Value)
+
+if __name__ == "__main__":
+    main()
