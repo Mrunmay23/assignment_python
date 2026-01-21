@@ -1,7 +1,15 @@
-def CheckGreater(a, b):
-    if a > b:
-        print("It is Greater:", a)
+def ChkGreater(No1,No2):
+    if(No1 > No2):
+        return No1
     else:
-        print("It is Greater:", b)
+        return No2
+    
+def main():
+    Value1 = int(input("Enter first number:"))
+    Value2 = int(input("Enter second number:"))
+    
+    Ret = ChkGreater(Value1,Value2)
+    print("Greater value is: ",Ret)
 
-CheckGreater(10, 20)   
+if __name__ == "__main__":
+    main()
