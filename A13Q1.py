@@ -1,5 +1,12 @@
-length = float(input("Enter length: "))
-width = float(input("Enter width: "))
+def Area(length,width):
+    area = length*width
+    print("Area of rectangle is : ",area)
+        
+def main():
+    Value1 = int(input("Enter length: "))
+    Value2 = int(input("Enter width: "))
 
-area = length * width
-print("Area of Rectangle:", area)
+    Area(Value1, Value2)
+
+if __name__ == "__main__":
+    main()
