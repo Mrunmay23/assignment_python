@@ -1,12 +1,26 @@
-n = int(input())
-temp = n
-rev = 0
+def ChkPalindrome(No):
+    Temp = No
+    Rev = 0
+    
+    while No > 0:
+        reminder = No % 10
+        Rev = Rev * 10 + reminder
+        No = No // 10
 
-while n > 0:
-    rev = rev * 10 + (n % 10)
-    n //= 10
+    if Rev == Temp:
+        return True
+    else:
+        return False
 
-if temp == rev:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+def main():
+    Value = int(input("Enter Number: "))
+    Ret = ChkPalindrome(Value)
+
+    if(Ret == True):
+        print("Number is palindrome")
+    else:
+        print("Number is Not a palindrome")
+        
+
+if __name__ == "__main__" :
+    main()
