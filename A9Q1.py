@@ -1,4 +1,8 @@
-def display():
+def Display():
     print("Jay Ganesh...")
 
-display()
+def main():
+    Display()
+
+if __name__ == "__main__":
+    main()
