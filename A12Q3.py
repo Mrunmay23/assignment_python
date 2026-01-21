@@ -1,7 +1,34 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+def Calculation(No1,No2):
+    def Addition():
+        Ans = No1 + No2
+        print("Addition is : ",Ans)
+    
+    def Subtraction():
+        Ans = No1 - No2
+        print("Substraction is : ",Ans)
 
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
+    def Multiplication():
+        Ans = No1 * No2
+        print("Multiplication is : ",Ans)
+    def Division():
+        if(No2 == 0):
+            print("Division by zero is not possible.")
+            return
+        
+        else:
+            Ans = No1 / No2
+            print("Division is : ",Ans)
+    
+    Addition()
+    Subtraction()
+    Multiplication()
+    Division()
+
+def main():
+    Value1 = int(input("Enter First Number: "))
+    Value2 = int(input("Enter second Number: "))
+    
+    Calculation(Value1,Value2)
+
+if __name__ == "__main__":
+    main()
