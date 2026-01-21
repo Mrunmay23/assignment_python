@@ -1,4 +1,12 @@
-radius = float(input("Enter radius: "))
+def Area(r):
+    pi = 3.14159
+    area = pi * r * r 
+    print("Area of Circle is : ",area)
+        
+def main():
+    Radius = int(input("Enter Radius: "))
 
-area = 3.14 * radius * radius
-print("Area of Circle:", area)
+    Area(Radius)
+
+if __name__ == "__main__":
+    main()
