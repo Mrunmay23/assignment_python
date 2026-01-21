@@ -1,12 +1,22 @@
-n = int(input("Enter number: "))
+def ChkPerfectNo(No):
+    Sum = 0
+    for i in range(1,No):
+        if(No % i == 0):
+            Sum = Sum + i
+    if( Sum == No ):
+        return True
+    else:
+        return False
 
-sum_factors = 0
 
-for i in range(1, n):
-    if n % i == 0:
-        sum_factors += i
+def main():
+    Value = int(input("Enter Number: "))
+    Ret = ChkPerfectNo(Value)
 
-if sum_factors == n:
-    print("Perfect Number")
-else:
-    print("Not Perfect Number")
+    if (Ret == True):
+        print("it is Perfect No.")
+    else:
+        print("It is not perfect no.")
+
+if __name__ == "__main__":
+    main()
