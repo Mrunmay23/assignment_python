@@ -1,4 +1,12 @@
-def Cube(no):
-    print(no * no * no)
+def Cube(No):
+        Ans = No * No * No
+        return Ans
+    
+def main():
+    Value = int(input("Enter number:"))
+    
+    Ret = Cube(Value)
+    print("Cube of the number is: ",Ret)
 
-Cube(5)
+if __name__ == "__main__":
+    main()
