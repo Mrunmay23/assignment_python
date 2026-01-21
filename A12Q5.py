@@ -1,9 +1,11 @@
+def Numbers(No):
+    for i in range( No,0 ,-1):
+        print(i,end=" ")
+        
 def main():
+    Value = int(input("Enter Number: "))
 
-    n = int(input("Enter number: "))
-
-    for i in range(n, 0, -1):
-        print(i, end=" ")
+    Numbers(Value)
 
 if __name__ == "__main__":
     main()
